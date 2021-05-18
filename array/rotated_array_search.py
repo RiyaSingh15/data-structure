@@ -15,11 +15,10 @@ class rotated_array_search:
             print("Array is unsorted")
             return self.array_input()
         print("Input array = ", input_list)
-        rotation_factor = int(
-            input("Enter the number to rotate the elements by: "))
-        self.rotation(input_list, rotation_factor, input_length)
+        self.rotation(input_list, int(
+            input("Enter the number to rotate the elements by: ")))
 
-    def rotation(self, ar, d, n):
+    def rotation(self, ar, d):
         input_list = []
         input_list = ar
         for i in range(d):
