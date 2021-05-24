@@ -31,8 +31,7 @@ class pair_with_given_sum:
         for i in range(0, len(array)-1):
             for j in range(i, len(array)-1):
                 if(array[i]+array[j] == sum):
-                    print("{", array[i], " + ", array[j], "} = ", sum)
-                    break
+                    return print("{", array[i], " + ", array[j], "} = ", sum)
         else:
             print("There is no pair in array with sum = ", sum)
 
